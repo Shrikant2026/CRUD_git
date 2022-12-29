@@ -1,0 +1,28 @@
+<html>  
+<body>  
+	
+	<h2 style="color:green"> Get all marked checkboxes value </h2>  
+	<h4> Select the programming language, you know </h4>  
+	<tr>  
+		<td> Java: <input type="checkbox" id="check1" name="pl" value="Java"> </td>  
+		<td> PHP: <input type="checkbox" id="check2" name="pl" value="PHP"> </td>   
+	</tr> <tr>  
+		<td> Angular: <input type="checkbox" id="check3" name="pl" value="Angular"> </td>  
+		<td> CSS: <input type="checkbox" id="check4" name="pl" value="CSS"> </td>  
+	</tr> <tr>  
+		<td> Python: <input type="checkbox" id="check5" name="pl" value="Python"> </td>  
+		<td> Android: <input type="checkbox" id="check6" name="pl" value="Android"> </td> <br> <br>  
+		<button id="btn">Submit</button> <br>  
+		<h4 style="color:green" id="result"></h4>    
+		
+	<script>  
+		document.getElementById('btn').onclick = function() {  
+			var markedCheckbox = document.getElementsByName('pl');  
+			for (var checkbox of markedCheckbox) {  
+				if (checkbox.checked)  
+					document.body.append(checkbox.value + ' ');  
+			}  
+		}  
+	</script>  		
+</body>  
+</html>  

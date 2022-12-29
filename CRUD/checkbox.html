@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check</title>
+</head>
+<body>
+	<div ng-repeat="data in filters.status" >
+    <label class="Form-label--tick">
+        <input type="checkbox" value="data.id" id="status" ng-model="status" class="Form-label-checkbox"  ng-change="IfCheck(data.id,status)" >
+        <span class="Form-label-text"> {{data.status}}</span>
+    </label>
+</div>
+Javascript:
+
+<script>
+    $scope.IfCheck = function (data, check) {
+        if (check) {
+            status.push(data);
+            $scope.checkedData[0].status = status;
+        }
+        else {
+            var index = $scope.status.indexOf(data);
+            $scope.status.splice(index);
+        }
+
+    };
+</script>
+</body>
+</html>

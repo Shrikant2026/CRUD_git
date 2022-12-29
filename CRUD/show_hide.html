@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Shoe and Hide</title>
+</head>
+<body>
+	<div>
+		<label><input type="checkbox" name="hobbies" id="football" class ="hobbies" value="football"  onclick="ShowHideDiv()">Football</label>
+		<label><input type="checkbox" name="hobbies" id="badminton" class ="hobbies" value="badminton" onclick="ShowHideDiv()">Badminton</label>
+		<label><input type="checkbox" name="hobbies" id="cricket" class ="hobbies" value="cricket" onclick="ShowHideDiv()">Cricket</label>
+		<label><input type="checkbox" name="hobbies" id="swimming" class ="hobbies" value="swimming" onclick="ShowHideDiv()">Swimming </label>
+	</div>
+<hr />
+	<div>
+		<p class= "checkbox" id ="check1" style="display: none;" >Football<br></p>
+		<p class= "checkbox" id ="check2" style="display: none;" >Badminton<br></p>
+		<p class= "checkbox" id ="check3" style="display: none;" >Cricket<br></p>
+		<p class= "checkbox" id ="check4" style="display: none;" >Swimming<br></p>
+	</div>
+
+<script type="text/javascript">
+    function ShowHideDiv(hobbies) {
+        var checkbox = document.getElementById(this);
+        checkbox.style.display = hobbies.checked ? "block" : "none";
+    }
+</script>
+</body>
+</html>
+

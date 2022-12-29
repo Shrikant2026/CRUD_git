@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selected SHOW</title>
+</head>
+<body>
+	<div class="container">
+		<h2>Select the hobbies which you like </h2>
+		<div class="content">
+			<div>Football <input type="checkbox" name="hobbies" id="football" class ="hobbies" value="football"> </div>
+			<div>Badminton <input type="checkbox" name="hobbies" id="badminton" class ="hobbies" value="badminton"> </div>
+			<div>Cricket <input type="checkbox" name="hobbies" id="cricket" class ="hobbies" value="cricket"> </div>
+			<div>Swimming <input type="checkbox" name="hobbies" id="swimming" class ="hobbies" value="swimming"> </div>
+		</div>
+		<div>
+			<p id ="check1" style="display: none;" >Football<br></p>
+			<p id ="check2" style="display: none;" >Badminton<br></p>
+			<p id ="check3" style="display: none;" >Cricket<br></p>
+			<p id ="check4" style="display: none;" >Swimming<br></p>
+		</div>
+	</div>
+
+	<script >
+		const checkbox1 = document.getElementById("football");
+		const option1 = document.getElementById("check1");
+
+		checkbox1.addEventListener("change", function() {
+		  if (checkbox1.checked) {
+		    option1.style.display = "block";
+		  } else {
+		    option1.style.display = "none";
+		  }
+		});		
+
+		const checkbox2 = document.getElementById("badminton");
+		const option2 = document.getElementById("check2");
+
+		checkbox2.addEventListener("change", function() {
+		  if (checkbox2.checked) {
+		    option2.style.display = "block";
+		  } else {
+		    option2.style.display = "none";
+		  }
+		});		
+
+		const checkbox3 = document.getElementById("cricket");
+		const option3 = document.getElementById("check3");
+
+		checkbox3.addEventListener("change", function() {
+		  if (checkbox3.checked) {
+		    option3.style.display = "block";
+		  } else {
+		    option3.style.display = "none";
+		  }
+		});		
+
+		const checkbox4 = document.getElementById("swimming");
+		const option4 = document.getElementById("check4");
+
+		checkbox4.addEventListener("change", function() {
+		  if (checkbox4.checked) {
+		    option4.style.display = "block";
+		  } else {
+		    option4.style.display = "none";
+		  }
+		});
+	</script>
+</body>
+</html>
