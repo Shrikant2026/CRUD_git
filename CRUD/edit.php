@@ -9,10 +9,6 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<style type="text/css">
-		*{
-			box-sizing: border-box;
-
-		}
 		body{
 			margin: 0px auto;
 			max-width: 1320px;
